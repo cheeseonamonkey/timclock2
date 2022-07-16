@@ -1,0 +1,73 @@
+.hourTableSimple {
+    width: 20%;
+    font-size: 85%;
+    line-height: 7px;
+    padding: 8px;
+    margin: 4px;
+    margin-left: 5%;
+    margin-top: 2%
+}
+
+.invoiceTable {
+font-size: 105%;
+    width: 50%;
+    margin: 20px;
+        padding: 12px;
+
+}
+table {
+    border-collapse: collapse;
+}
+table td {
+    padding: 3px;
+}
+
+table hr {
+    opacity: 0;
+}
+
+table {
+    margin: 5px;
+}
+
+.invoiceTable td {
+
+    border: 1px solid rgba(12,12,77,0.08);
+}
+
+
+h2 {
+    text-shadow: 1px 1px 4px rgba(12,12,77,0.4);
+    font-size: 125%;
+}
+
+
+body {
+    width: 8.5in;
+    height: 10.5in;
+    background: #faf8f2;
+    padding: 8px;
+    padding-left: 13px;
+}
+
+html {
+    font-size: 13pt;
+}
+
+hr {
+    width: 95%;
+}
+
+.centered {
+    width: 100%;
+    text-align: center;
+}
+
+.address {
+    display: inline-block;
+    margin: 3px;
+   padding-left: 8px;
+   padding-right: 8px;
+   font-family: monospace;
+   font-size: 110%;
+}

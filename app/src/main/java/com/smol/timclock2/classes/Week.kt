@@ -109,7 +109,7 @@ data class Week(
 
 
             val w = Week(LocalDate.now())
-LocalDateTime.now().toString().logit()
+//LocalDateTime.now().toString().logit()
 
             w.entrySets.add(
                 EntrySet()

@@ -142,7 +142,7 @@ fun Entries_Column(itemList : SnapshotStateList<EntrySet>
                             )
 
 
-                            it.toString().logit()
+                            //it.toString().logit()
 
                         }
                         Column(modifier = Modifier

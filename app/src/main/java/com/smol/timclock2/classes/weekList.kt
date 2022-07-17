@@ -75,7 +75,7 @@ val allEntrySets : List<EntrySet>
         val now = DateTime.now()
         val matchNow = mutableListOf<Week>()
         for(w in this.weeks) {
-            w.weekEndDate.plusDays(1).atStartOfDay().toString().logit()
+            //w.weekEndDate.plusDays(1).atStartOfDay().toString().logit()
             if(now.isAfter(w.weekStartDate.atStartOfDay())  &&
                 now.isBefore(w.weekEndDate.plusDays(1).atStartOfDay()))
                 matchNow.add(w)
@@ -116,7 +116,7 @@ fun getWeekOfDate(dt:Date) : Week {
     fun plusCurrentWeek(): WeekList {
 
         "plus current week - ".logit()
-        this.toString().logit()
+        //this.toString().logit()
 
         if(this.hasCurrentWeek())
             throw Exception("Error 121 - Week already exists! Don't do this.");

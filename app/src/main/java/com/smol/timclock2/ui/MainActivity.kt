@@ -32,6 +32,7 @@ import kotlinx.coroutines.delay
 import androidx.compose.ui.zIndex
 import com.google.gson.Gson
 import com.smol.timclock2.R
+import com.smol.timclock2.htmlinvoice.InvoiceBuilder
 
 
 fun String.addEmptyLines(lines: Int) = this + "\n".repeat(lines)
@@ -134,6 +135,25 @@ class MainActivity : ComponentActivity() {
                         ) {
                             Text("Take a dump (log)")
                         }
+
+
+
+
+                        Button(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(0.dp),
+                            onClick = {
+
+                                InvoiceBuilder.invoiceHtml()
+
+                                dialog_debugBoop.value = false
+
+                            }
+                        ) {
+                            Text("Test HTML generate")
+                        }
+
                     }
                 }
             }

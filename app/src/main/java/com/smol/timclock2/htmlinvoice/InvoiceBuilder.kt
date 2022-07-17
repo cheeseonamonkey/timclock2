@@ -58,32 +58,54 @@ class InvoiceBuilder {
         //vars:
 
         //today's date
-        val todayDate =
+        private val todayDate =
             DateTime.now().date
-        val dateRange =
+        private var dateRange =
             DateRange(Date(2022,7,15), Date(2022,7,31))
 
         //client address
-        val clientStr =
+        private var clientStr =
             "Enwest Marketing\n2501 Wall Avenue\nOgden, UT 84401"
-        val clientStrArr =
+        private val clientStrArr =
             clientStr.split("\n")
 
         //amount table
-        val hourlyRate =
+        private var hourlyRate =
             17.50
-        val hoursWorked =
+        private var hoursWorked =
             23.25
-        val subtotal =
+        private val subtotal =
             hourlyRate * hoursWorked
-        val totalDue =
+        private val totalDue =
             subtotal
 
 
-        val meStr =
+        private var meStr =
             "Alexander Huso\n1270 E. South Weber Dr.\nSouth Weber, UT 84405"
-        val meStrArr =
+        private val meStrArr =
             meStr.split("\n")
+
+
+        fun setDateRange(valIn :DateRange) :InvoiceBuilder.Companion {
+            dateRange = valIn
+            return this
+        }
+        fun setClientStr(valIn :String) :InvoiceBuilder.Companion {
+            clientStr = valIn
+            return this
+        }
+        fun setHourlyRate(valIn :Double) :InvoiceBuilder.Companion {
+            hourlyRate = valIn
+            return this
+        }
+        fun setHoursWorked(valIn :Double) :InvoiceBuilder.Companion {
+            hoursWorked = valIn
+            return this
+        }
+        fun setMeStr(valIn :String) :InvoiceBuilder.Companion {
+            meStr = valIn
+            return this
+        }
 
 
 
@@ -230,9 +252,14 @@ class InvoiceBuilder {
                 ff.logit()
 
 
-
-
-
+//
+//
+//you are here!
+            //smooth sailing, just made the builder methods for all these vars
+            //consider the best way to use data structure from app
+            //
+//
+//
 
 
 
